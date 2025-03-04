@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="RouteCD" representedClassName="RouteCD" syncable="YES">
+        <attribute name="dateAccessed" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dateCreated" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="distanceMeters" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="travelMode" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="waypointsCD" optional="YES" toMany="YES" minCount="2" deletionRule="Cascade" destinationEntity="WaypointCD" inverseName="routeCD" inverseEntity="WaypointCD" syncable="YES"/>
+    </entity>
+    <entity name="WaypointCD" representedClassName="WaypointCD" syncable="YES">
+        <attribute name="indexRoute" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="routeCD" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RouteCD" inverseName="waypointsCD" inverseEntity="RouteCD" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RouteCD" positionX="-209" positionY="36" width="128" height="135"/>
+        <element name="WaypointCD" positionX="-54" positionY="36" width="128" height="103"/>
+    </elements>
+</model>

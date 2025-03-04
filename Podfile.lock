@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (4.5.0)
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
+  - GoogleMaps (2.3.1):
+    - GoogleMaps/Maps (= 2.3.1)
+  - GoogleMaps/Base (2.3.1)
+  - GoogleMaps/Maps (2.3.1):
+    - GoogleMaps/Base
+  - GoogleMapsDirections (1.1.3):
+    - Alamofire (~> 4)
+    - ObjectMapper (~> 2)
+  - GooglePlaces (2.3.1):
+    - GoogleMaps/Base (= 2.3.1)
+  - ObjectMapper (2.2.7)
+  - Polyline (4.1.1)
+
+DEPENDENCIES:
+  - Charts
+  - GoogleMaps
+  - GoogleMapsDirections (~> 1.1)
+  - GooglePlaces
+  - Polyline (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Charts
+    - GoogleMaps
+    - GoogleMapsDirections
+    - GooglePlaces
+    - ObjectMapper
+    - Polyline
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
+  GoogleMapsDirections: 6ee0cbddafd380d10fa3198d593b0531092aa6da
+  GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
+  ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
+  Polyline: 381d1e699fd12508f97cfc468478dfbab67edf1f
+
+PODFILE CHECKSUM: 01a4495bcf56c6aa4606888941faa730888a8010
+
+COCOAPODS: 1.9.1
